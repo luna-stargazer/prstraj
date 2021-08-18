@@ -11,7 +11,9 @@ sel.intenses <- .005
 n.locis <- c(100)
 n_chromss <- c(200)
 
+#selection start time
 ts=commandArgs(trailingOnly=TRUE)[1]
+#selection end time
 t.offs =commandArgs(trailingOnly=TRUE)[2]
 #####
 input= commandArgs(trailingOnly=TRUE)[3]
