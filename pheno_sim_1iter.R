@@ -374,6 +374,11 @@ lins.list.rent.adj <- list()
 times.c.relate <- list()
 lins.list.relate <- list()
 
+
+#there is some uncertainty regarding expected input units for RENT+ that was not clarified in the original paper, hence we might want to see how input unit changes things here#
+#sure.alt.is.derived is a function in helper_functions_coal_sel.R, we want to observe if having this option turned on or off affects things
+#when sure.alt.is.derived = FALSE, we do not check to make sure that the alternative allele specified by the tree inference algorithm/software(RENT+, Relate) matches the derived allele
+
 for(i in 1:n.loci){
 	times.c[[i]] <- trees_to_times(ms_trees_list[[i]], anc_trees_ms[[i]], der_trees_ms[[i]], time, sure.alt.is.derived = FALSE, units_in = 4)
 	lins.list[[i]] <- times_to_lins(times.c[[i]], time)
@@ -407,6 +412,8 @@ times.c.relate <- list()
 lins.list.relate <- list()
 
 #Infer coalescence times from tree data
+#this time we set sure.alt.is.derived = TRUE, forcing alt allele to be the derived allele even if the ref tree seems to coalesce into the alt tree
+# please check the comments in /helper_functions_coal_sel.R
 
 for(i in 1:n.loci){
 	times.c[[i]] <- trees_to_times(ms_trees_list[[i]], anc_trees_ms[[i]], der_trees_ms[[i]], time, sure.alt.is.derived = TRUE, units_in = 4)
