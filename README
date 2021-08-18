@@ -1,0 +1,27 @@
+The repository contains files modified from https://github.com/luna-stargazer/rhps_coalescent/tree/master/small_example, 
+please read through the original repo first  
+
+Scripts contain directories from my account, please modify those to save to your local or cluster directory!
+
+STEP1. To start, run "loop_pheno_sims_reps_mod.R sel_start sel_end phen_nums", where sel_start=selection start time (from current), sel_end=selection end time(from current), phen_nums=number of phenotypes interested in simulating
+i.e loop_pheno_sims_reps_mod.R 0.04 0.02 100
+
+Read the Relate documentation prepared by the Myers group:
+https://myersgroup.github.io/relate/getting_started.html#GettingStarted
+
+Please read the Rscript pheno_sim_1iter.R, especially the chunk of code relevant for relate data output (comes after RENT+ data read-in and tree inference). Feel free to modify the RELATE related code (pun not intended) if needed 
+
+Check to see that you have appropriately named data in the specified folders after STEP1.
+
+STEP2. Do "sh batch.analyze.sh" to batch submit scripts. Note that again directory in batch.analyze.sh and the analyze_tree scripts (i.e. analyze.tree0.02.sh) needs to be subsituted with your own directory
+To do this more efficiently consider: https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
+
+Please adjust the settings for sbatch in analyze_tree scripts , e.g. job name, output, memory partition, as needed
+
+STEP3. Please consult the plotting scripts in Doc's original repo for plotting:
+https://github.com/luna-stargazer/rhps_coalescent/blob/master/maintext_sims_rent_061318/make_figure3-5.R
+
+
+
+
+
