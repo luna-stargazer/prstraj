@@ -4,7 +4,7 @@ please read through the original repo first
 Scripts contain directories from my account, please modify those to save to your local or cluster directory!
 
 STEP1. To start, run "loop_pheno_sims_reps_mod.R sel_start sel_end phen_nums", where sel_start=selection start time (from current), sel_end=selection end time(from current), phen_nums=number of phenotypes interested in simulating
-i.e loop_pheno_sims_reps_mod.R 0.04 0.02 100
+i.e Rscript loop_pheno_sims_reps_mod.R 0.04 0.02 100
 
 Read the Relate documentation prepared by the Myers group:
 https://myersgroup.github.io/relate/getting_started.html#GettingStarted
