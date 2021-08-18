@@ -9,7 +9,7 @@ i.e loop_pheno_sims_reps_mod.R 0.04 0.02 100
 Read the Relate documentation prepared by the Myers group:
 https://myersgroup.github.io/relate/getting_started.html#GettingStarted
 
-Please read the Rscript pheno_sim_1iter.R, especially the chunk of code relevant for relate data output (comes after RENT+ data read-in and tree inference). Feel free to modify the RELATE related code (pun not intended) if needed 
+Please read the Rscript pheno_sim_1iter.R in this repo (modified from original), especially the chunk of code relevant for relate data output (comes after RENT+ data read-in and tree inference). Feel free to modify the RELATE related code (pun not intended) if needed 
 
 Check to see that you have appropriately named data in the specified folders after STEP1.
 
