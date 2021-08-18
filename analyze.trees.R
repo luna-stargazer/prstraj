@@ -15,7 +15,7 @@ n_chromss <- c(200)
 ts=commandArgs(trailingOnly=TRUE)[1]
 #selection end time
 t.offs =commandArgs(trailingOnly=TRUE)[2]
-#specify tree inference algorithm
+#tree inference software type
 input= commandArgs(trailingOnly=TRUE)[3]
 
 #alt_status= commandArgs(trailingOnly=TRUE)[4]
