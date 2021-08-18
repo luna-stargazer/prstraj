@@ -15,10 +15,10 @@ n_chromss <- c(200)
 ts=commandArgs(trailingOnly=TRUE)[1]
 #selection end time
 t.offs =commandArgs(trailingOnly=TRUE)[2]
-#####
+#specify tree inference algorithm
 input= commandArgs(trailingOnly=TRUE)[3]
 
-alt_status= commandArgs(trailingOnly=TRUE)[4]
+#alt_status= commandArgs(trailingOnly=TRUE)[4]
 
 
 phen_nums <- c(1:100) #1 number for each rep we want to do at each combination of parameters
@@ -88,8 +88,8 @@ for(iter in 1:dim(pars)[1]){
 
 out_dir<- sprintf("/home/cmb-00/mde/lindadin/abbeyroad/rhps_coalescent/maintext_sims_rent_061318/neutral_sel_%s/out_all/", ts)
 dir.create(out_dir)
-#save.image(paste(out_dir,"analyzed_trees_",input, ".RData", sep = ""))
-save.image(paste(out_dir,"analyzed_trees_",input, "_shared.RData", sep = ""))
+save.image(paste(out_dir,"analyzed_trees_",input, ".RData", sep = ""))
+#save.image(paste(out_dir,"analyzed_trees_",input, "_shared.RData", sep = ""))
 
 
 
