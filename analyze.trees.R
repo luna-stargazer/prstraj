@@ -79,8 +79,8 @@ for(iter in 1:dim(pars)[1]){
 	# source("/home/cmb-00/mde/lindadin/abbeyroad/rhps_coalescent/maintext_sims_rent_061318/analyze_sim_relate.R")
 	# source("/home/cmb-00/mde/lindadin/abbeyroad/rhps_coalescent/maintext_sims_rent_061318/analyze_sim_rent_adj.R")
 	#print (n.loci)
-	#source(sprintf("/home/cmb-00/mde/lindadin/abbeyroad/rhps_coalescent/maintext_sims_rent_061318/analyze_sim_%s.R", input))
-	source(sprintf("/home/cmb-00/mde/lindadin/abbeyroad/rhps_coalescent/maintext_sims_rent_061318/analyze_sim_%s_shared.R", input))
+	source(sprintf("/home/cmb-00/mde/lindadin/abbeyroad/rhps_coalescent/maintext_sims_rent_061318/analyze_sim_%s.R", input))
+	#source(sprintf("/home/cmb-00/mde/lindadin/abbeyroad/rhps_coalescent/maintext_sims_rent_061318/analyze_sim_%s_shared.R", input))
 	#print(paste("trial", as.character(iter), "complete."))
 }
 
